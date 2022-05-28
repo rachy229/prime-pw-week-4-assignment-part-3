@@ -29,10 +29,9 @@ console.log(listItems())
 
 //empty
 
-let basketLength = basket.length; 
-console.log(basketLength);
+console.log(basket.length);
 function empty() {
-    while (basketLength > 0) {
+    while (basket.length > 0) {
         basket.pop;
     }
 }
