@@ -8,13 +8,13 @@ let basket = []
 function addItem (item) {
     basket.push(item);
     return true
-}//end addItem
+}//end addItem 
 
-console.log(addItem('item'));
+console.log('adding item, expect true' ,addItem('item'));
 console.log('Basket:' , basket);
-console.log(addItem('anotherItem'));
+console.log('adding item, expect true' , addItem('anotherItem'));
 console.log('Basket:', basket);
-console.log(addItem('cheese'));
+console.log('adding item, expect true' ,addItem('cheese'));
 console.log('Basket:' , basket);
 
 //listItems
@@ -22,21 +22,31 @@ function listItems() {
     for (let i=0; i < basket.length; i++) {
         console.log(basket[i]);
     }
-    return true
 }//end listItems
+
+//I'm not quite sure how to get rid of the "undefined"
 
 console.log(listItems())
 
-//empty
 
-console.log(basket.length);
-function empty() {
-    while (basket.length > 0) {
-        basket.pop;
-    }
-}
+console.log('basket length:' , basket.length);
 
+// empty
+
+//I'm very stuck on this one
+
+
+// function empty() {
+//     while (basket.length > 0) {
+//         basket.pop;
+//     }
+// } 
+
+//  while (basket.length > 0) {
+//     basket.pop;
+//  }
 
 // console.log(empty);
 
-// console.log('Basket:', basketLength);
+console.log('Basket:', basket);
+console.log('basket length:' , basket.length);
