@@ -36,17 +36,23 @@ console.log('basket length:' , basket.length);
 //I'm very stuck on this one
 
 
-// function empty() {
-//     while (basket.length > 0) {
-//         basket.pop;
-//     }
-// } 
+console.log('basket before pop' , basket);
 
-//  while (basket.length > 0) {
-//     basket.pop;
-//  }
+basket.pop()
 
-// console.log(empty);
+console.log('basket after pop' , basket);
 
-console.log('Basket:', basket);
-console.log('basket length:' , basket.length);
+basket.push('carrots');
+
+console.log ('added another item, basket is now:' , basket);
+
+function empty() {
+    while (basket.length > 0) {
+        basket.pop();
+    }
+} 
+
+console.log(empty());
+
+console.log('Basket after empty:', basket);
+console.log('basket length after empty:' , basket.length);
